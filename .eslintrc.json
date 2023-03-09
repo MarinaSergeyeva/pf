@@ -19,7 +19,7 @@
   "rules": {
     "react/react-in-jsx-scope": "off",
     "indent": "error",
-    "prettier/prettier": "error",
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "sort-imports": [
       "error",
@@ -52,6 +52,10 @@
           "caseInsensitive": true
         }
       }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
     ]
   }
 }

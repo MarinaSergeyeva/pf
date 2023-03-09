@@ -18,7 +18,7 @@
   "plugins": ["react", "prettier", "import"],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "indent": "error",
+    "indent": ["error", 2, { "offsetTernaryExpressions": true }],
     "prettier/prettier": ["error", { "endOfLine": "auto" }],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "sort-imports": [
@@ -55,7 +55,15 @@
     ],
     "import/no-extraneous-dependencies": [
       "error",
-      { "devDependencies": ["**/*.test.js", "**/*.spec.js"] }
+      {
+        "devDependencies": false,
+        "optionalDependencies": false,
+        "peerDependencies": false
+      }
+    ],
+    "react/function-component-definition": [
+      2,
+      { "namedComponents": "arrow-function" }
     ]
   }
 }

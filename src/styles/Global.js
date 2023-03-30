@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,900&display=swap');
+import { createGlobalStyle } from 'styled-components';
+import { normalize } from 'styled-normalize';
 
-@import './normalize.css';
+const GlobalStyles = createGlobalStyle`
+${normalize}
 
 html {
     box-sizing: border-box;
@@ -15,8 +17,9 @@ html {
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+    font-family: ${({ theme }) => theme.typography.fontFamily};
+    font-weight: ${({ theme }) => theme.typography.fontSize};
+    background: ${({ theme }) => theme.palette.background.default};
 }
 
 img {
@@ -63,3 +66,11 @@ button:active,
 button:focus {
     outline: none;
 }
+
+
+/* Normalize */
+
+
+`;
+
+export default GlobalStyles;

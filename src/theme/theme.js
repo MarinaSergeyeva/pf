@@ -19,7 +19,10 @@ const theme = createTheme({
       secondary: '#000000', // white
     },
   },
-  typography: {},
+  typography: {
+    fontFamily: `'Montserrat', sans-serif`,
+    fontSize: 400,
+  },
 });
 
 export default theme;

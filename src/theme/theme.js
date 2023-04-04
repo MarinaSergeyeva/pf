@@ -15,8 +15,8 @@ const theme = createTheme({
       dark: '#4C6085', // dark-blue
     },
     text: {
-      primary: '#FFFFFF', // black
-      secondary: '#000000', // white
+      primary: '#FFFFFF', // white
+      secondary: '#000000', // black
     },
   },
   typography: {

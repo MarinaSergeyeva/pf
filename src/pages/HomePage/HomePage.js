@@ -5,12 +5,18 @@ import React from 'react';
 import {
   HomePageContainer,
   HomePageTitle,
+  MainPortrait,
+  MainPortraitWrapper,
   NameHighlighted,
 } from './homePageStyled';
+import portrait from '../../assets/images/HomePage/portrait.jpg';
 
 const HomePage = () => {
   return (
     <HomePageContainer>
+      <MainPortraitWrapper>
+        <MainPortrait width={600} src={portrait} alt="portrait photo" />
+      </MainPortraitWrapper>
       <HomePageTitle>
         Hello,
         <br />I am <NameHighlighted>Maryna Serheieva</NameHighlighted>,

@@ -9,6 +9,7 @@ const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   @media ${device.tablet} {
     width: 690px;
   }

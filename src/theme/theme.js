@@ -4,7 +4,8 @@ const theme = createTheme({
   palette: {
     // mode,
     background: {
-      default: '#32322C', // dark-grey
+      default: '#141414', // dark-grey
+      light: '#424241',
     },
     primary: {
       main: '#36F1CD', // light-turquoise
@@ -21,7 +22,16 @@ const theme = createTheme({
   },
   typography: {
     fontFamily: `'Montserrat', sans-serif`,
-    fontSize: 400,
+    fontWeight: {
+      light: 300,
+      regular: 400,
+      semiBold: 600,
+      bold: 700,
+      black: 900,
+    },
+    fontStyle: {
+      italic: 'italic',
+    },
   },
 });
 

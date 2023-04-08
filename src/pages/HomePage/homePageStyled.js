@@ -16,14 +16,23 @@ export const HomePageContainer = styled.div`
 `;
 
 export const MainPortraitWrapper = styled.div`
-  width: 550px;
-  height: 850px;
+  height: 600px;
+  width: 600px;
+  filter: drop-shadow(
+    0px 11px 8px ${props => props.theme.palette.text.secondary}
+  );
 `;
 
 export const MainPortrait = styled.img`
+  clip-path: polygon(31% 0, 100% 25%, 61% 100%, 0 93%);
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: all 0.3s ease-out;
+  &:hover {
+    transition: all 0.3s ease-out;
+    transform: scale(1.15, 1.15);
+  }
 `;
 
 export const HomePageTitle = styled.div`

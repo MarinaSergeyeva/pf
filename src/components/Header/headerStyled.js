@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 import { device } from '../../common/deviceSizes';
 
-const HeaderContainer = styled.div`
+export const HeaderContainer = styled.div`
   width: 280px;
   margin: 0 auto;
   padding: 17px 0px;
@@ -18,4 +18,16 @@ const HeaderContainer = styled.div`
   }
 `;
 
-export default HeaderContainer;
+export const NavList = styled.ul`
+  display: flex;
+`;
+
+export const NavItem = styled.li`
+  margin-right: 20px;
+  color: ${({ theme }) => theme.palette.text.primary};
+`;
+
+export const Logo = styled.div`
+  color: ${({ theme }) => theme.palette.text.primary};
+  font-weight: ${({ theme }) => theme.typography.fontWeight.black};
+`;

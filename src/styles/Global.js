@@ -20,6 +20,7 @@ body {
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-weight: ${({ theme }) => theme.typography.fontSize};
     background: ${({ theme }) => theme.palette.background.default};
+
 }
 
 img {
@@ -68,9 +69,16 @@ button:focus {
 }
 
 
-/* Normalize */
+/* Background */
 
-
+.background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
 `;
 
 export default GlobalStyles;

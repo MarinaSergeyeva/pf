@@ -15,7 +15,7 @@ const HomePage = () => {
   return (
     <HomePageContainer>
       <MainPortraitWrapper>
-        <MainPortrait width={600} src={portrait} alt="portrait photo" />
+        <MainPortrait src={portrait} alt="portrait photo" />
       </MainPortraitWrapper>
       <HomePageTitle>
         Hello,

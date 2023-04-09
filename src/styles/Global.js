@@ -20,6 +20,7 @@ body {
     font-family: ${({ theme }) => theme.typography.fontFamily};
     font-weight: ${({ theme }) => theme.typography.fontSize};
     background: ${({ theme }) => theme.palette.background.default};
+    color:${({ theme }) => theme.palette.text.primary}
 
 }
 

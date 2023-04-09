@@ -19,7 +19,7 @@ export const MainPortraitWrapper = styled.div`
   height: 600px;
   width: 600px;
   filter: drop-shadow(
-    0px 11px 8px ${props => props.theme.palette.text.secondary}
+    3px 7px 7px ${props => props.theme.palette.text.secondary}
   );
 `;
 

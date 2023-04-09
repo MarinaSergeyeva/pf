@@ -28,9 +28,7 @@ const App = () => {
     <BrowserRouter>
       <ThemeProvider theme={theme}>
         <GlobalStyles />
-        <header>
-          <Header />
-        </header>
+        <Header />
         <main>
           <Routes>
             <Route path="/" element={<Home />} />

@@ -1,21 +1,20 @@
 import styled from 'styled-components';
 
-import { device } from '../../common/deviceSizes';
+import { mainContainerWidth } from '../../common/deviceSizes';
 
+export const HeaderWrapper = styled.header`
+  z-index: 10;
+  position: sticky;
+  top: 0;
+`;
 export const HeaderContainer = styled.div`
-  width: 280px;
+  width: ${mainContainerWidth};
+  height: 60px;
   margin: 0 auto;
   padding: 17px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  @media ${device.tablet} {
-    width: 690px;
-  }
-  @media ${device.desktop} {
-    width: 1170px;
-  }
 `;
 
 export const NavList = styled.ul`

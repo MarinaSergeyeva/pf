@@ -4,14 +4,16 @@ import { normalize } from 'styled-normalize';
 const GlobalStyles = createGlobalStyle`
 ${normalize}
 
-html {
-    box-sizing: border-box;
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }

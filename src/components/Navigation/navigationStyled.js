@@ -6,11 +6,9 @@ import { device } from '../../common/deviceSizes';
 
 export const PrimaryNav = styled.nav`
   /* z-index: 14; */
-  height: 90px;
   display: flex;
   background: ${({ theme }) => theme.palette.background.default};
   justify-content: space-between;
-  padding: 3px calc((100vw - 1000px) / 2);
 `;
 
 export const MenuLink = styled(Link)`

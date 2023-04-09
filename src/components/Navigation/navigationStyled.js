@@ -12,16 +12,41 @@ export const PrimaryNav = styled.nav`
 `;
 
 export const MenuLink = styled(Link)`
+  position: relative;
   color: ${({ theme }) => theme.palette.text.primary};
   font-weight: ${({ theme }) => theme.typography.fontWeight.bold};
   display: flex;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
-  padding: 0 1.2rem;
   height: 100%;
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
   &.active {
     color: ${({ theme }) => theme.palette.primary.main};
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    background-color: ${({ theme }) => theme.palette.text.primary};
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  &.active:after {
+    background-color: ${({ theme }) => theme.palette.primary.main};
+  }
+  &.active:hover:after {
+    background-color: ${({ theme }) => theme.palette.primary.main};
+  }
+  &:hover:after {
+    background-color: #ffffff;
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 `;
 

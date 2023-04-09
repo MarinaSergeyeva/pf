@@ -59,7 +59,7 @@ export const HomePageTitleWrapper = styled.div`
     position: absolute;
     width: 300px;
     top: 400px;
-    right: 50px;
+    right: 11vw;
   }
 
   @media ${device.desktop} {

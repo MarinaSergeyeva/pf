@@ -1,16 +1,11 @@
-import { HeaderContainer, Logo, NavItem, NavList } from './headerStyled';
+import { HeaderContainer, Logo } from './headerStyled';
+import Navigation from '../Navigation/Navigation';
 
 const Header = () => {
   return (
     <HeaderContainer>
       <Logo>LOGO</Logo>
-      <nav>
-        <NavList>
-          <NavItem>About</NavItem>
-          <NavItem>CV</NavItem>
-          <NavItem>Contacts</NavItem>
-        </NavList>
-      </nav>
+      <Navigation />
     </HeaderContainer>
   );
 };

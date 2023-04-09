@@ -1,9 +1,13 @@
 import React from 'react';
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 
 import { Particles } from '../../assets/bg/particles.min';
-import HomePage from '../../pages/HomePage/HomePage';
+import About from '../../pages/About/About';
+import Contacts from '../../pages/Contacts/Contacts';
+import Home from '../../pages/Home/Home';
+import Resume from '../../pages/Resume/Resume';
 import GlobalStyles from '../../styles/Global';
 import theme from '../../theme/theme';
 import Footer from '../Footer/Footer';
@@ -21,18 +25,25 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <header>
-        <Header />
-      </header>
-      <main>
-        <HomePage />
-      </main>
-      <footer>
-        <Footer />
-      </footer>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <header>
+          <Header />
+        </header>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/contacts" element={<Contacts />} />
+          </Routes>
+        </main>
+        <footer>
+          <Footer />
+        </footer>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 };
 

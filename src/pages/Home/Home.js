@@ -6,7 +6,7 @@ import {
   MainPortrait,
   MainPortraitWrapper,
   NameHighlighted,
-} from './homePageStyled';
+} from './homeStyled';
 import portrait from '../../assets/images/HomePage/portrait.jpg';
 
 const HomePage = () => {

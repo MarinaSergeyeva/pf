@@ -37,9 +37,7 @@ const App = () => {
             <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </main>
-        <footer>
-          <Footer />
-        </footer>
+        <Footer />
       </ThemeProvider>
     </BrowserRouter>
   );

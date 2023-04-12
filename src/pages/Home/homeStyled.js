@@ -42,6 +42,7 @@ export const MainPortrait = styled.img`
   width: 100%;
   object-fit: cover;
   transition: all 0.3s ease-out;
+
   &:hover {
     transition: all 0.3s ease-out;
     transform: scale(1.05, 1.05);
@@ -64,6 +65,7 @@ export const HomePageTitleWrapper = styled.div`
 
   @media ${device.desktop} {
     position: absolute;
+    max-width: 40%;
     width: 600px;
     top: 500px;
     right: 100px;

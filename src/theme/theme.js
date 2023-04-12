@@ -5,7 +5,7 @@ const theme = createTheme({
     // mode,
     background: {
       default: '#141414', // dark-grey
-      light: '#424241',
+      light: '#424241', // light-grey
     },
     primary: {
       main: '#36F1CD', // light-turquoise
@@ -18,6 +18,7 @@ const theme = createTheme({
     text: {
       primary: '#FFFFFF', // white
       secondary: '#000000', // black
+      lightPrimary: '#BBBBBB',
     },
   },
   typography: {
